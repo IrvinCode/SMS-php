@@ -1,0 +1,17 @@
+{
+    "name": "irvincode/smsaltiria",
+    "description": "Send SMS in PHP",
+    "authors": [
+        {
+            "name": "IrvinS",
+            "email": "irvinsegarciaflores@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "IrvinCode\\SMS\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
