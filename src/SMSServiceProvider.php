@@ -13,10 +13,10 @@ class SMSServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadTranslationsFrom(__DIR__.'/src/config', 'IrvinCode\SMS\config\Altiria');
+        $this->loadTranslationsFrom(__DIR__.'/src/config', 'IrvinCode\SMS\config\config');
 
         $this->publishes([
-            __DIR__.'/src/config' => resource_path('IrvinCode/SMS/src/config/Altiria'),
+            __DIR__.'/src/config' => resource_path('IrvinCode/SMS/src/config/config'),
         ]);
     }
     /**

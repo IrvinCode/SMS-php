@@ -87,7 +87,7 @@ class SMSAltiria extends SMS implements MobileInterface
             if (strpos($buf, "HTTP/1.1 200 OK") === false) {
                 $errorCode = "ERROR. Codigo error HTTP: " . substr($buf, 9, 3) . "\n";
                 $errorCode .= "Compruebe que ha configurado correctamente la direccion/url ";
-                $errorCode .= "suministrada por Altiria";
+                $errorCode .= "suministrada por config";
                 $output = "ERROR. Codigo error HTTP";
             }
             if (strstr($buf, "ERROR")) {
