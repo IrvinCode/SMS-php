@@ -2,8 +2,8 @@
 
 return [
 
-    'SMS_ALTIRIA_PROD_DOMAIN_ID' => 'ahorrolibre',
-    'SMS_ALTIRIA_PROD_LOGIN' => 'roberto@ahorrolibre.com',
-    'SMS_ALTIRIA_PROD_PASSWORD' => '7ALt2nXsKhz9'
+    env('SMS_ALTIRIA_PROD_DOMAIN_ID', 'ahorrolibre'),
+    env('SMS_ALTIRIA_PROD_LOGIN', 'roberto@ahorrolibre.com'),
+    env('SMS_ALTIRIA_PROD_PASSWORD', '7ALt2nXsKhz9')
 
 ];
