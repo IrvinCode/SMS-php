@@ -17,7 +17,7 @@ class SMSServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/config/config.php' => config_path('config.php'),
-        ], 'config');
+        ]);
     }
     /**
      * Register the application services.
@@ -29,7 +29,7 @@ class SMSServiceProvider extends ServiceProvider
         $this->app->bind('IrvinCode\smsAltiria\SMSAltiria');
 
         $this->mergeConfigFrom(
-            __DIR__.'/config/config.php', 'sms'
+            __DIR__.'/config/config.php', 'config'
         );
     }
 }

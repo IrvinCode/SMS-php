@@ -7,7 +7,7 @@ class SMSConfig
 {
     protected $domainId;
 
-    protected $login;
+    protected $login; 
 
     protected $password;
 
