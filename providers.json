@@ -1,0 +1,11 @@
+{
+  "providers": [
+    "IrvinCode\\SMS\\SMSServiceProvider"
+  ],
+  "aliases": [
+    {
+      "alias": "SMS",
+      "facade": "IrvinCode\\SMS\\Facades\\SMS"
+    }
+  ]
+}
