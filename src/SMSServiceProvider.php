@@ -17,7 +17,7 @@ class SMSServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/config/config.php' => config_path('config.php'),
-        ]);
+        ], 'config');
     }
     /**
      * Register the application services.
