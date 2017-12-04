@@ -7,14 +7,19 @@ use Illuminate\Support\ServiceProvider;
 class SMSServiceProvider extends ServiceProvider
 {
     /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
+
+    /**
      * Bootstrap the application services.
      *
      * @return void
      */
     public function boot()
     {
-        $this->loadTranslationsFrom(__DIR__.'config/config.php', 'config');
-
         $this->publishes([
             __DIR__.'/config/config.php' => config_path('config.php'),
         ]);
@@ -26,10 +31,8 @@ class SMSServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('IrvinCode/SMS/SMSAltiria');
-
-        $this->mergeConfigFrom(
-            __DIR__.'/config/config.php', 'config'
-        );
+        config([
+            'config/config.php',
+        ]);
     }
 }
