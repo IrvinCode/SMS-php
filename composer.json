@@ -1,6 +1,9 @@
 {
     "name": "irvincode/sms-php",
     "description": "Send SMS in PHP",
+    "homepage": "https://github.com/IrvinCode/sms-php",
+    "minimum-stability": "stable",
+    "require": {},
     "authors": [
         {
             "name": "IrvinS",
@@ -11,7 +14,5 @@
         "psr-4": {
             "IrvinCode\\SMS\\": "src"
         }
-    },
-    "minimum-stability": "stable",
-    "require": {}
+    }
 }
