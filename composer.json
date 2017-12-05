@@ -14,5 +14,15 @@
         "psr-4": {
             "IrvinCode\\SMS\\": "src"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IrvinCode\\SMS\\Providers\\Altiria"
+            ],
+            "aliases": {
+                "Sms": "IrvinCode\\SMS\\Facades\\Altiria"
+            }
+        }
+    },
 }
