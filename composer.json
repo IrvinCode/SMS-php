@@ -1,7 +1,7 @@
 {
-    "name": "irvincode/sms-php",
+    "name": "morfin/pkg_alibre_altiria",
     "description": "Send SMS in PHP",
-    "homepage": "https://github.com/IrvinCode/sms-php",
+    "homepage": "https://bitbucket.org/morfin/pkg_alibre_altiria",
     "minimum-stability": "stable",
     "require": {},
     "authors": [
