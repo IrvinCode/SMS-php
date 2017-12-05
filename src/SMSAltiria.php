@@ -25,11 +25,12 @@ class SMSAltiria extends SMS implements MobileInterface
         if(env('SMS_SIMULATED')==true){
 
             return $this->simulate($number, $msg, $res);
+
         }
 
-        $domainId = env('SMS_ALTIRIA_PROD_DOMAIN_ID');
-        $login = env('SMS_ALTIRIA_PROD_LOGIN');
-        $password = env('SMS_ALTIRIA_PROD_PASSWORD');
+        $domainId = config('SMSAltiria.SMS_DOMAIN_ID');
+        $login = config('SMSAltiria.SMS_LOGIN');
+        $password = config('SMSAltiria.SMS_PASSWORD');
 
         $sData = 'cmd=sendsms&';
         $sData .= 'domainId=' .$domainId. '&';
