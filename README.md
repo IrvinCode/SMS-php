@@ -6,8 +6,13 @@
     
 ## Documentation
 
-First, you must put your personal domain, login and password in your .env
+First, put the command:
 
-    SMS_ALTIRIA_PROD_DOMAIN_ID=YOUR_DOMAIN_ID
-    SMS_ALTIRIA_PROD_LOGIN=YOUR_LOGIN
-    SMS_ALTIRIA_PROD_PASSWORD=YOUR_PASSWORD
+    php artisan vendor:publish --tag=SMS
+    
+
+Then, you must put your personal domainId, login and password in your config/SMSAltiria
+
+    SMS_DOMAIN_ID=YOUR_DOMAIN_ID
+    SMS_LOGIN=YOUR_LOGIN
+    SMS_PASSWORD=YOUR_PASSWORD

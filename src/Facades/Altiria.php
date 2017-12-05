@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: irvin
- * Date: 5/12/17
- * Time: 10:08 AM
- */
 
 namespace IrvinCode\SMS\Facades;
 

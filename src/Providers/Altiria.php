@@ -16,7 +16,7 @@ class Altiria extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/SMSAltiria.php' => config_path('SMSAltiria.php'),
-        ], 'config');
+        ], 'SMS');
     }
     /**
      * Register the application services.
@@ -26,7 +26,7 @@ class Altiria extends ServiceProvider
     public function register()
     {
         // Config
-        $this->mergeConfigFrom( __DIR__ . '/../config/SMSAltiria.php', 'config');
+        $this->mergeConfigFrom( __DIR__ . '/../config/SMSAltiria.php', 'SMS');
 
         $this->app->singleton(SMSAltiria::class, function($app){
             return new SMSAltiria();
