@@ -3,10 +3,8 @@
 ## Installation
 
     composer require irvincode/sms-php
-    
-## Documentation
 
-First, put the command:
+Now, put the command:
 
     php artisan vendor:publish --tag=SMS
     
